@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.5;
+}
+
+#container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 130px;
+}
+
+#location h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#location p {
+    font-size: 14px;
+    color: #666;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+#profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#main {
+    display: flex;
+}
+
+#sidebar ul {
+    list-style: none;
+    width: 120px;
+}
+
+#sidebar ul li {
+    text-align: center;
+    padding: 10px;
+    font-size: 23px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#sidebar ul li span {
+    font-size: 18px;
+    color: #666;
+}
+
+#sidebar ul li.active {
+    background: darkviolet;
+    color: #fff;
+}
+
+#weather-info {
+    flex: 1;
+    padding: 20px;
+    background: darkviolet;
+    border-radius: 20px;
+    color: #fff;
+    position: relative;
+}
+
+#temp-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+#temp {
+    flex: 1;
+    text-align: left;
+}
+
+#temp h2 {
+    font-size: 130px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+#temp p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccc;
+    margin-left: 80px;
+}
+
+#rain-icon-container {
+    width: 200px;
+    height: 300px;
+    display: flex;
+}
+
+#quote {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 200px;
+    text-align: right;
+    color: #ccc;
+    padding-right: 100px;
+    padding-top: 60px;
+}
+
+#details {
+    margin-top: 30px;
+    padding-top: 50px;
+}
+
+#details ul {
+    list-style: none;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+#details li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+#details img {
+    width: 50px;
+    height: 50px;
+}
+
+#footer {
+    margin: 200px;
+}
+
+@media (max-width: 768px) {
+    #temp-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #rain-icon-container {
+        margin-top: 20px;
+    }
+    #details ul {
+        padding-left: 0;
+    }
+    #quote {
+        font-size: 16px;
+        text-align: center;
+    }
+}
